@@ -28,18 +28,24 @@ const NewsDetail = () => {
       return "";
     }
   };
+  
   const filteredData = useMemo(() => {
-    return News.slice(0, 5);
+    return News ? News.slice(0, 5) : [];
   }, [News]);
+  
   const handleCardClick = useCallback((item) => {
     dispatch(onAddNewsDetail(item));
     navigate("/news/detail");
   }, [dispatch,navigate]);
 
   useEffect(() => {
-    dispatch(onGetData(i18n.language, "general"));
+    if (i18n.language === "en") {
+      dispatch(onGetData("en", "general"));
+    } else {
+      dispatch(onGetData("tr", "general"));
+    }
   }, [dispatch, i18n.language]);
-
+ 
   if (!NewsDetail) {
     return (
       <Container>
@@ -47,7 +53,7 @@ const NewsDetail = () => {
       </Container>
     );
   }
-
+  
   return (
     <Container>
       <Row>

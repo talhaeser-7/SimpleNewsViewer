@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const token = "apikey 0mecMD5dWU8XtBrUCTL5PS:1h1iW9KBZYN7x9RFSRkoJ9"
+const token = "apikey 1EFqxhyYQXhzHkmTRdhQ1B:5rW2yUoFwna01TDhRvOo2Q"
 const API_URL = "https://api.collectapi.com/"
 const axiosApi = axios.create({
   baseURL: API_URL
