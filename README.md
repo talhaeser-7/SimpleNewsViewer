@@ -16,39 +16,6 @@ Projenin canlı demosuna [buradan](https://meek-selkie-fe5bc8.netlify.app/econom
 - bootstrap
 - axios
 
-## Proje Yapısı
-project/
-|-- src/
-| |-- assets/
-| | |-- animations/
-| | |-- images/
-| | |-- fonts/
-| |-- components/
-| | |-- Header.js
-| | |-- Footer.js
-| | |-- Headline.js
-| | |-- NewsCard.js
-| | |-- NewsSidebar.js
-| | |-- Weather.js
-| |-- helpers/
-| | |-- api_helper.js
-| | |-- fakebackend_helper.js
-| | |-- url_helper.js
-| |-- pages/
-| | |-- Dashboard.js
-| | |-- Economy.js
-| | |-- NewsDetail.js
-| | |-- NotFound.js
-| | |-- Sport.js
-| |-- store/
-| | |-- action.js
-| | |-- reducer.js
-| | |-- saga.js
-| | |-- index.js
-| |-- app.css
-| |-- app.js
-| |-- i18n.js
-| |-- index.js
 
 ## Projeyi Çalıştırmak
 
